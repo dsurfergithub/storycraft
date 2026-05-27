@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-bento-bg: #0F1014;
+  --color-bento-card: #1A1C23;
+  --color-bento-card-inner: #21242D;
+  --color-bento-border: #2D313D;
+  --color-bento-border-highlight: #3A3F4E;
+  --color-bento-orange: #FF6B35;
+  --color-bento-text: #E0E0E6;
+  --color-bento-muted: #9BA1B1;
+  --color-bento-mint: #06D6A0;
+  --color-bento-yellow: #FFD166;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bento-bg);
+    color: var(--color-bento-text);
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom modern scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #272e3a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f4a5c;
+}
+
+/* Custom blinking writing cursor animation */
+@keyframes blink {
+  50% { border-color: transparent }
+}
+.writing-cursor {
+  animation: blink 1s step-end infinite;
+}

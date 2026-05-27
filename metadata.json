@@ -1,0 +1,6 @@
+{
+  "name": "StoryCraft",
+  "description": "Motor pedagógico interactivo de storytelling en español con diagnóstico, lecciones, desafíos y feedback asistido por inteligencia artificial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
